@@ -1,0 +1,4 @@
+rootProject.name = 'reactiveSample'
+include 'server-provider'
+include 'server-consumer'
+
