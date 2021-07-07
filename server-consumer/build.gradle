@@ -29,9 +29,11 @@ dependencies {
     /*openfeign*/
 //    implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
     /*feign-reactor  */
-    implementation "com.playtika.reactivefeign:feign-reactor:${feignReactorVersion}"
-    implementation "com.playtika.reactivefeign:feign-reactor-cloud:${feignReactorVersion}"
-    implementation "com.playtika.reactivefeign:feign-reactor-spring-configuration:${feignReactorVersion}"
+// https://mvnrepository.com/artifact/com.playtika.reactivefeign/feign-reactor-webclient
+    implementation group: 'com.playtika.reactivefeign', name: 'feign-reactor-webclient', version: '2.0.8'
+    // https://mvnrepository.com/artifact/com.playtika.reactivefeign/feign-reactor-cloud2
+    implementation group: 'com.playtika.reactivefeign', name: 'feign-reactor-cloud2', version: '2.0.8'
+    implementation group: 'com.playtika.reactivefeign', name: 'feign-reactor-spring-configuration', version: '2.0.8'
 
 //    implementation 'io.github.reactivefeign:feign-reactor-cloud:1.0.0'
 //    implementation 'com.playtika.reactivefeign:feign-reactor:2.0.7'

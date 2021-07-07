@@ -12,7 +12,6 @@ import reactivefeign.spring.config.EnableReactiveFeignClients;
 @EnableDiscoveryClient
 @EnableWebFlux
 @EnableReactiveFeignClients
-@EnableFeignClients
 public class ConsumerApplication {
 
     public static void main(String[] args) {
